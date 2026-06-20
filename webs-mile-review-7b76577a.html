@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再次认识 · 米乐</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f7f5f2;
+            color: #2d2a27;
+            line-height: 1.7;
+        }
+        .hero {
+            background: #1e1b18;
+            padding: 4rem 1.5rem 3.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #c9a87c, transparent);
+        }
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 350;
+            letter-spacing: 1px;
+            color: #ede6db;
+            margin-bottom: 0.5rem;
+        }
+        .hero .sub {
+            font-size: 1rem;
+            color: #b5a998;
+            letter-spacing: 2px;
+            font-weight: 300;
+            border-top: 1px solid #3d3731;
+            display: inline-block;
+            padding-top: 0.8rem;
+            margin-top: 0.4rem;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 4rem;
+        }
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #24201c;
+            border-left: 4px solid #b38b65;
+            padding-left: 0.9rem;
+            margin-bottom: 1.2rem;
+            margin-top: 2.8rem;
+        }
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 1.3rem;
+            font-size: 1rem;
+            color: #3f3a35;
+        }
+        a {
+            color: #a77b52;
+            text-decoration: none;
+            font-weight: 450;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s, color 0.15s;
+        }
+        a:hover {
+            color: #7c5d3e;
+            border-bottom-color: #b38b65;
+        }
+        .quote-block {
+            background: #eeebe6;
+            border-left: 4px solid #b38b65;
+            padding: 1.2rem 1.4rem;
+            margin: 2rem 0 1.8rem;
+            border-radius: 0 6px 6px 0;
+            font-style: normal;
+            color: #3b352f;
+            font-size: 0.98rem;
+        }
+        .quote-block::before {
+            content: '💡 ';
+            font-style: normal;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin: 1.8rem 0 2rem;
+        }
+        .feature-item {
+            background: #f2efe9;
+            padding: 1rem 1.2rem;
+            border-radius: 8px;
+            border: 1px solid #e2dbd2;
+            transition: background 0.15s;
+        }
+        .feature-item strong {
+            display: block;
+            font-weight: 500;
+            color: #2f2a25;
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+        }
+        .feature-item span {
+            font-size: 0.9rem;
+            color: #5c544c;
+        }
+        .visit-hint {
+            background: #ffffff;
+            border: 1px solid #ddd6cc;
+            border-radius: 20px;
+            padding: 1.2rem 1.6rem;
+            margin: 2.5rem 0 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+            font-size: 1rem;
+            color: #3b352f;
+        }
+        .faq-mini {
+            margin-top: 2.8rem;
+            border-top: 1px dashed #d6cec3;
+            padding-top: 2rem;
+        }
+        .faq-q {
+            font-weight: 500;
+            color: #2a2622;
+            margin: 1.2rem 0 0.2rem;
+            font-size: 1rem;
+        }
+        .faq-a {
+            color: #4f4841;
+            margin-bottom: 1rem;
+            font-size: 0.96rem;
+            padding-left: 0.4rem;
+        }
+        .footer-note {
+            margin-top: 3.5rem;
+            font-size: 0.85rem;
+            color: #8a8076;
+            text-align: center;
+            border-top: 1px solid #e0d8cf;
+            padding-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero {
+                padding: 3rem 1rem 2.5rem;
+            }
+            .container {
+                padding: 2rem 1.2rem 3rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 0.9rem;
+            }
+            .quote-block {
+                padding: 1rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>米乐</h1>
+    <div class="sub">一次收藏 · 随时回来</div>
+</section>
+
+<div class="container">
+
+    <p style="font-size: 1.05rem; margin-top: 0.2rem;">
+        如果你曾来过这里，大概还记得那种简洁、安静的阅读感。这次重新整理了一份说明，把一些值得留意的信息更清楚地写下来——方便你再次打开时，不用从头摸索。
+    </p>
+
+    <div class="section-title">从再次访问说起</div>
+    <p>
+        不少人第一次找到 <a href="https://webs-mile.com">米乐</a> 是因为某篇具体内容或工具推荐，过后想再回来，却忘记了入口。其实只要把地址收藏起来，或者记住「米乐」这个称呼就好。站点没有复杂的层级，主页就是最直接的起点。
+    </p>
+    <p>
+        如果你习惯用浏览器的书签栏，建议把 <a href="https://webs-mile.com">米乐</a> 放在常用文件夹里。要是偶尔清理收藏夹，也只需记住那个低调的深色头图和简洁的排版——看到这样的页面风格，基本就是它了。
+    </p>
+
+    <div class="section-title">持续关注的理由</div>
+    <p>
+        站点不会高频推送，更新节奏大致保持每周 1～2 次，内容偏向工具效率、信息梳理和轻量级知识卡片。每篇都经过压缩和提炼，避免冗长的套话。相比追逐热点，这里更在意内容在几个月后回看依然有参考价值。
+    </p>
+    <p>
+        如果你对这类长期耐读的信息感兴趣，可以考虑不定期回来翻翻。不需要注册，也不用留下邮箱，每次打开就是一个干净的内容页。
+    </p>
+
+    <div class="quote-block">
+        整理者说：这里没有「必须订阅」的压力，也没有弹窗提醒。你记得就来，忘了也无妨。不过如果你觉得某个主题值得展开，欢迎顺着站内线索自己深挖。
+    </div>
+
+    <div class="feature-grid">
+        <div class="feature-item">
+            <strong>📂 收藏友好</strong>
+            <span>页面结构扁平，书签直达主页或分类，无需多次跳转。</span>
+        </div>
+        <div class="feature-item">
+            <strong>🧩 内容独立</strong>
+            <span>每篇文章自成一个话题，不必从头读到尾，随时可停。</span>
+        </div>
+        <div class="feature-item">
+            <strong>🕊️ 无追踪</strong>
+            <span>不收集访客数据，没有分析脚本，只提供内容本身。</span>
+        </div>
+        <div class="feature-item">
+            <strong>📄 排版一致</strong>
+            <span>深色头图 + 浅色正文区，强调色用于链接，阅读节奏稳定。</span>
+        </div>
+    </div>
+
+    <div class="section-title">常见简单疑问</div>
+    <div class="faq-mini">
+        <div class="faq-q">内容会删除或隐藏吗？</div>
+        <div class="faq-a">已发布的文章基本保留，偶尔修正错字或更新过时链接，不会突然撤掉。你可以放心收藏。</div>
+        <div class="faq-q">有没有移动端适配？</div>
+        <div class="faq-a">有的，目前的版式在手机和电脑上都能正常阅读，字体和间距做了响应式调整。</div>
+        <div class="faq-q">如何联系或反馈？</div>
+        <div class="faq-a">站内没有留言区，不过你可以通过常见渠道找到维护者的公开信息。暂时没有开设专门的客服入口。</div>
+    </div>
+
+    <div class="visit-hint">
+        📌 把 <a href="https://webs-mile.com">米乐</a> 放进书签，下次回来不用再搜索。
+    </div>
+
+    <p style="margin-top: 0.8rem;">
+        如果你是因为旧链接失效或记忆模糊而重新寻找，希望这个页面能帮你确认——就是这里。内容没有变味，风格也保持如初。
+    </p>
+
+    <div class="footer-note">
+        —— 整理于 2025 · 内容持续更新，保留修改权利 ——
+    </div>
+
+</div>
+
+</body>
+</html>
